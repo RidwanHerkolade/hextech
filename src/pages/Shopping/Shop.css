@@ -1,0 +1,138 @@
+
+.product{
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin: 2rem 6rem;
+}
+.pro__divs h1 {
+    font-size: var(--font-fold);
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    color: var(--color-blackie);
+    margin-top: 2rem !important;
+}
+.pro__divs p {
+    text-align: center;
+    font-size: var(--font-small);
+    font-weight: 600;
+}
+.pro__div {
+    box-shadow: var(--box-shadow);
+    width: 100%;
+}
+.divss {
+    margin: 0.6rem 0rem;
+}
+.img {
+    width: 100%;
+    height: 15rem;
+}
+.img img {
+     width: 100%;
+     height: 100%;
+     /* object-fit: cover; */
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem 0rem;
+}
+.btn button {
+     padding: 0.5rem 1.5rem;
+     font-family: var(--font-family);
+     color: var(--color-blackie);
+     font-weight: 800;
+     outline: none;
+     border: 0.7px solid var(--color-border);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+@media screen and (min-width:1200px) and (max-width: 2000px) {
+    .img {
+        height: 25rem;
+    } 
+    h2 {
+        margin-top: 2rem !important;
+        font-size: var(--font-header);
+    }
+}
+@media screen and (min-width:2000px)  {
+    .img {
+        height: 25rem;
+    }
+    .pro__divs h1 {
+        font-size: var(--font-header);
+        font-weight: 800;
+    }
+    .pro__divs p {
+        font-size: var(--font-fold);
+        font-weight: 700;
+    }
+    .btn button {
+        padding: 0.6rem 1.5rem;
+        font-weight: 800;
+        font-size: var(--font-fold);
+       cursor: pointer;
+   }
+   h2 {
+    font-size: var(--font-desq);
+}
+}
+@media screen and (max-width: 1024px) {
+    .product{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 3rem;
+  }     
+  h2 {
+    font-size: var(--font-fold);
+    margin-top: 2rem !important;
+} 
+.btn button {
+    padding: 0.5rem 1.5rem;
+    font-size: var(--font-fold);
+    font-weight: 800;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .product{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 1.5rem;
+        column-gap: 1rem;
+        row-gap: 2rem;
+  }   
+  .img {
+    height: 10rem;
+} 
+.pro__divs h1 {
+    font-size: var(--font-small);
+}  
+.btn button {
+    padding: 0.3rem 1rem;
+    font-size: var(--font-smalls);
+}
+.divss {
+    margin: 0.1rem 0rem;
+}
+h2 {
+    font-size: var(--font-fold);
+    margin-top: 1.5rem !important;
+}
+    
+}
+@media screen and (width: 280px) {
+    .product{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+  h2 {
+      font-size: var(--font-fold);
+      margin-top: 1.5rem !important;
+   }
+}

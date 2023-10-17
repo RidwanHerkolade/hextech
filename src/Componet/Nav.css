@@ -1,0 +1,52 @@
+.nav__bar {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--color-blackie);
+    padding: 1rem 2rem;
+    align-items: center;
+
+}
+.nav__bar .links {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    color: var(--color-white);
+    
+}
+.shops {
+    color: var(--color-white);
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+.styles {
+    font-size: var(--font-fold);
+}
+
+
+@media screen and (min-width:1200px) and (max-width: 2000px) {
+    nav__bar {
+        padding: 1rem 2rem;
+        align-items: center;
+    
+    }
+    .styles {
+        font-size: var(--font-fold);
+    }
+
+}
+@media screen and (min-width: 2000px) {
+    nav__bar {
+        padding: 5rem;
+        align-items: center;
+    
+    }
+    .styles {
+        font-size: var(--font-headers);
+    }
+    .shops {
+        font-size: var(--font-header);
+        font-weight: 600;
+    }
+ 
+
+} 
